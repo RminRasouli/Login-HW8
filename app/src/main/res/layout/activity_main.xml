@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/get_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="16dp"
+        android:hint="fullname"
+        app:layout_constraintEnd_toEndOf="@+id/get_username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/get_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/username"
+        app:layout_constraintEnd_toEndOf="@+id/get_fullname"
+        app:layout_constraintStart_toStartOf="@+id/get_fullname"
+        app:layout_constraintTop_toBottomOf="@+id/get_fullname" />
+
+    <EditText
+        android:id="@+id/get_confirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/confirmpassword"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/get_password"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/get_password"
+        app:layout_constraintTop_toBottomOf="@+id/get_password" />
+
+    <EditText
+        android:id="@+id/get_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/get_username"
+        app:layout_constraintStart_toStartOf="@+id/get_username"
+        app:layout_constraintTop_toBottomOf="@+id/get_username" />
+
+    <EditText
+        android:id="@+id/get_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/get_email"
+        app:layout_constraintStart_toStartOf="@+id/get_email"
+        app:layout_constraintTop_toBottomOf="@+id/get_email" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="71dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/gender"
+        android:textDirection="anyRtl"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/get_confirmpassword"
+        tools:ignore="MissingConstraints" />
+
+    <RadioButton
+        android:id="@+id/radio_female"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/female"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints,OnClick,UsingOnClickInXml" />
+
+    <RadioButton
+        android:id="@+id/radio_male"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/male"
+        app:layout_constraintBottom_toBottomOf="@+id/radio_female"
+        app:layout_constraintStart_toEndOf="@+id/radio_female"
+        app:layout_constraintTop_toTopOf="@+id/radio_female"
+        tools:ignore="MissingConstraints,OnClick,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="287dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="130dp"
+        android:onClick="Test"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/get_confirmpassword"
+        tools:ignore="MissingConstraint,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="287dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:onClick="Showinfo"
+        android:text="@string/show_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

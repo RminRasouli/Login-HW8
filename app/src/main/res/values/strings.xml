@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="full_name">full_name</string>
+    <string name="username">username</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="confirmpassword">confirmpassword</string>
+    <string name="gender">gender</string>
+    <string name="female">female</string>
+    <string name="male">male</string>
+    <string name="register">register</string>
+    <string name="show_info">show info</string>
+</resources>
