@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sos"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:onClick="Showinfo"
+                android:src="@drawable/img_1"
+                tools:ignore="UsingOnClickInXml" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35sp"
+                android:layout_marginTop="130dp"
+                android:text="Register"
+                android:textSize="38dp" />
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="500dp"
+                android:layout_marginTop="160dp"
+                android:src="@drawable/rectangle5" />
+
+            <EditText
+                android:id="@+id/g_fn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="260dp"
+                android:layout_marginRight="40dp"
+                android:hint="FULL NAME" />
+
+            <EditText
+                android:id="@+id/g_US"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="315dp"
+                android:layout_marginRight="40dp"
+                android:hint="USERNAME" />
+
+            <EditText
+                android:id="@+id/g_EM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="370dp"
+                android:layout_marginRight="40dp"
+                android:hint="EMAIL" />
+
+            <EditText
+                android:id="@+id/g_PS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="425dp"
+                android:layout_marginRight="40dp"
+                android:hint="PASSWORD" />
+
+            <EditText
+                android:id="@+id/g_COPS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="480dp"
+                android:layout_marginRight="40dp"
+                android:hint="PASSWORD CONFIRM" />
+
+            <ImageButton
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="610dp"
+                android:onClick="register"
+                android:src="@drawable/botum" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="50sp"
+                android:layout_marginLeft="248dp"
+                android:layout_marginTop="610dp"
+                android:src="@drawable/singup" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125sp"
+                android:layout_marginTop="800dp"
+                android:text="See Info"
+                android:textSize="35sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="500dp"
+                android:layout_marginTop="800dp"
+                android:src="@drawable/rectangle5"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="930dp"
+                android:text="Full name : "
+                android:textColor="@color/purple_700"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="980dp"
+                android:text="username : "
+                android:textColor="@color/purple_700"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="1030dp"
+                android:text="Email : "
+                android:textColor="@color/purple_700"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="1080dp"
+                android:text="password : "
+                android:textColor="@color/purple_700"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="1130dp"
+                android:text="Confirm password : "
+                android:textColor="@color/purple_700"
+                android:textSize="20dp" />
+            <!--    ***************************************************     -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150sp"
+                android:layout_marginTop="930dp"
+                android:text=""
+                android:textColor="@color/purple_700"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150sp"
+                android:layout_marginTop="980dp"
+                android:text=" "
+                android:textColor="@color/purple_700"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150sp"
+                android:layout_marginTop="1030dp"
+                android:text=" "
+                android:textColor="@color/purple_700"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150sp"
+                android:layout_marginTop="1080dp"
+                android:text=""
+                android:textColor="@color/purple_700"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="1130dp"
+                android:text=""
+                android:textColor="@color/purple_700"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
