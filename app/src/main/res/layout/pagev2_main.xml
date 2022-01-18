@@ -82,13 +82,54 @@
                 android:layout_marginRight="40dp"
                 android:hint="PASSWORD CONFIRM" />
 
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:weightSum="1"
+                android:id="@+id/radioGroup"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="Male"
+                android:id="@+id/radioml"
+                android:layout_gravity="center_horizontal"
+                android:checked="true"
+                android:textSize="20dp"
+                android:layout_marginTop="525dp"
+                android:layout_marginLeft="35sp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/radiofml"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="20dp"
+                android:layout_marginTop="530dp"
+                android:layout_marginLeft="110dp"/>
+
+
             <ImageButton
+                android:id="@+id/Reg"
                 android:layout_width="130dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="220dp"
                 android:layout_marginTop="610dp"
                 android:onClick="register"
-                android:src="@drawable/botum" />
+                android:src="@drawable/botum"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/visi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Info"
+                android:layout_marginTop="615dp"
+                android:layout_marginLeft="25sp"
+                android:onClick="Visible"
+                />
 
             <ImageView
                 android:layout_width="80dp"
@@ -97,7 +138,9 @@
                 android:layout_marginTop="610dp"
                 android:src="@drawable/singup" />
 
+
             <TextView
+                android:id="@+id/a1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="125sp"
@@ -105,8 +148,8 @@
                 android:text="See Info"
                 android:textSize="35sp"
                 android:visibility="visible" />
-
             <ImageView
+                android:id="@+id/a2"
                 android:layout_width="400dp"
                 android:layout_height="500dp"
                 android:layout_marginTop="800dp"
@@ -114,6 +157,7 @@
                 android:visibility="visible" />
 
             <TextView
+                android:id="@+id/a3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25sp"
@@ -123,6 +167,7 @@
                 android:textSize="20dp" />
 
             <TextView
+                android:id="@+id/a4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25sp"
@@ -132,6 +177,7 @@
                 android:textSize="20dp" />
 
             <TextView
+                android:id="@+id/a5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25sp"
@@ -141,6 +187,7 @@
                 android:textSize="20dp" />
 
             <TextView
+                android:id="@+id/a6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25sp"
@@ -150,6 +197,7 @@
                 android:textSize="20dp" />
 
             <TextView
+                android:id="@+id/a7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25sp"
@@ -157,8 +205,20 @@
                 android:text="Confirm password : "
                 android:textColor="@color/purple_700"
                 android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/a8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="1180dp"
+                android:text="Gender : "
+                android:textColor="@color/purple_700"
+                android:textSize="20dp" />
             <!--    ***************************************************     -->
             <TextView
+
+                android:id="@+id/TxtFN"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="150sp"
@@ -168,6 +228,7 @@
                 android:textSize="20dp" />
 
             <TextView
+                android:id="@+id/TxTUser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="150sp"
@@ -177,6 +238,7 @@
                 android:textSize="20dp" />
 
             <TextView
+                android:id="@+id/TxTEm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="150sp"
@@ -186,6 +248,7 @@
                 android:textSize="20dp" />
 
             <TextView
+                android:id="@+id/TxtPAS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="150sp"
@@ -195,6 +258,7 @@
                 android:textSize="20dp" />
 
             <TextView
+                android:id="@+id/TxTCOPA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="200dp"
@@ -203,6 +267,15 @@
                 android:textColor="@color/purple_700"
                 android:textSize="20dp" />
 
+            <TextView
+                android:id="@+id/TxTGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="1180dp"
+                android:text=""
+                android:textColor="@color/purple_700"
+                android:textSize="20dp" />
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>
